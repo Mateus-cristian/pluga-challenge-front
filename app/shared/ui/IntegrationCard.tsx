@@ -1,10 +1,10 @@
 'use client';
 
 import { useIntegrationContext } from '@/context/IntegrationContext';
-import { AppData } from '@/types';
+import { IAppData } from '@/types';
 import Image from 'next/image';
 
-export default function IntegrationCard({ app }: { app: AppData }) {
+export default function IntegrationCard({ app }: { app: IAppData }) {
   const { selectApp } = useIntegrationContext();
 
   return (

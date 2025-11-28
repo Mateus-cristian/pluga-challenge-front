@@ -1,4 +1,4 @@
-export interface AppData {
+interface IAppData {
   app_id: string;
   name: string;
   icon: string;
@@ -7,11 +7,10 @@ export interface AppData {
 }
 
 interface IIntegrationContextValue {
-  apps: AppData[];
-  filteredApps: AppData[];
-  pagedApps: AppData[];
-  selectedApp: AppData | null;
-  lastSelectedApps: AppData[];
+  filteredApps: IAppData[];
+  pagedApps: IAppData[];
+  selectedApp: IAppData | null;
+  lastSelectedApps: IAppData[];
 
   search: string;
   page: number;
@@ -19,7 +18,7 @@ interface IIntegrationContextValue {
 
   setSearch: (v: string) => void;
   setPage: (v: number) => void;
-  selectApp: (app: AppData | null) => void;
+  selectApp: (app: IAppData | null) => void;
 }
 
-export { IAppData, IIntegrationContextValue };
+export type { IAppData, IIntegrationContextValue };

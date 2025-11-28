@@ -2,7 +2,7 @@
 
 import { useFilters } from '@/hooks.ts/useFilter';
 import { useSelectedApps } from '@/hooks.ts/useSelectedIntegration';
-import { AppData, IIntegrationContextValue } from '@/types';
+import { IAppData, IIntegrationContextValue } from '@/types';
 import { createContext, useContext } from 'react';
 
 const IntegrationContext = createContext<IIntegrationContextValue | undefined>(undefined);
@@ -11,7 +11,7 @@ export function IntegrationProvider({
   initialApps = [],
   children,
 }: {
-  initialApps?: AppData[];
+  initialApps?: IAppData[];
   children: React.ReactNode;
 }) {
   const { search, setSearch, page, setPage, filteredApps, pagedApps, maxPage } = useFilters(initialApps);
