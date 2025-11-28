@@ -1,6 +1,6 @@
-import { AppData } from '@/types';
+import { IAppData } from '@/types';
 
-export async function fetchApps(): Promise<AppData[]> {
+export async function fetchApps(): Promise<IAppData[]> {
   const response = await fetch('https://pluga.co/ferramentas_search.json', {
     cache: 'force-cache',
   });
