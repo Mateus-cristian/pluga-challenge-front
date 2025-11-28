@@ -1,0 +1,21 @@
+{
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "useTabs": false,
+    "printWidth": 120,
+    "jsxSingleQuote": true,
+    "plugins": [
+        "prettier-plugin-tailwindcss",
+        "prettier-plugin-classnames",
+        "prettier-plugin-merge"
+    ],
+    "tailwindStylesheet": "./app/globals.css",
+    "endingPosition": "absolute",
+    "customFunctions": [
+        "clsx",
+        "twMerge",
+        "cn"
+    ]
+}
