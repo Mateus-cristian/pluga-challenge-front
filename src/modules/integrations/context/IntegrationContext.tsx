@@ -2,7 +2,7 @@
 
 import { useFilters } from '@/modules/integrations/hooks/useFilter';
 import { useSelectedApps } from '@/modules/integrations/hooks/useSelectedIntegration';
-import { IAppData, IIntegrationContextValue } from '@/types';
+import { IAppData, IIntegrationContextValue } from '@/modules/integrations/types';
 import { createContext, useContext } from 'react';
 
 const IntegrationContext = createContext<IIntegrationContextValue | undefined>(undefined);

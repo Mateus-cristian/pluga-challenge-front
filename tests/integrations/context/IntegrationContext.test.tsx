@@ -1,6 +1,6 @@
 import { act, renderHook } from '@testing-library/react';
 import { IntegrationProvider, useIntegrationContext } from '@/modules/integrations/context/IntegrationContext';
-import { IAppData } from '../../types';
+import { IAppData } from '@/modules/integrations/types';
 
 const mockApps: IAppData[] = [
   { app_id: '1', name: 'Slack', icon: '/slack.png', link: 'https://slack.com', color: '#fff' },

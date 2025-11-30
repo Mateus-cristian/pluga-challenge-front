@@ -1,4 +1,3 @@
-import { IAppData } from '@/types';
 import { IAppData } from '@/modules/integrations/types';
 
 const LAST_APPS_KEY = 'lastSelectedApps';
