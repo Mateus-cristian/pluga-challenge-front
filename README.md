@@ -26,8 +26,6 @@ tests/
     components/   # Testes de componentes do domínio integrations
     context/      # Testes de contextos do domínio integrations
     services/     # Testes de serviços do domínio integrations
-    hooks/        # Testes de hooks do domínio integrations
-    types/        # Testes de tipos do domínio integrations
 ```
 
 ## Tecnologias
